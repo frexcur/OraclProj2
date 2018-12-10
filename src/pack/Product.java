@@ -14,7 +14,7 @@ package pack;
 
 import java.util.Date;
 
-public abstract class Product implements Item, Comparable<Product>{
+public abstract class Product implements Item, Comparable<Product> {
 
   // Starting production number at 1
   private static int currentProductionNumber = 1;
@@ -73,7 +73,7 @@ public abstract class Product implements Item, Comparable<Product>{
   }
 
   @Override
-  public int compareTo(Product p){
+  public int compareTo(Product p) {
     return name.compareTo(p.getName());
   }
 }

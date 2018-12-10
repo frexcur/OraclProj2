@@ -53,33 +53,26 @@ public class ProcessFiles {
     }
   }
 
-  /*
-  Employee info is used as the parameter.
-  If the file can't be written to there will be an exception thrown
+  /**
+   * @param employee info
+   * @throws IOException - thrown if file can't be written
    */
-  public void WriteFile(EmployeeInfo emp) throws IOException {
-
-//    p2 = Paths.get(p.toUri() + "TestResults.txt");
-//    Files.write(p2,emp.toString().getBytes());
+  public void WriteFile(EmployeeInfo employee) throws IOException {
 
     FileWriter writer = new FileWriter(p3.toString(), true);
     PrintWriter printWriter = new PrintWriter(writer);
 
-    printWriter.println(emp.toString());
+    printWriter.println(employee.toString());
 
     printWriter.close();
   }
 
   /**
-   *
    * @param products Arraylist
    * @throws IOException if file can't be written to
    */
   public void WriteFile(ArrayList<Product> products) throws IOException {
-//    p2 = Paths.get(p.toUri() + "TestResults.txt");
-//    Files.write(p2,products.toString().getBytes());
 
-    //FileWriter  writer = new FileWriter(p3.toString(),true);
     File file = new File(p3.toString());
     Writer writer = new OutputStreamWriter(new FileOutputStream(file), "UTF-8");
     PrintWriter printWriter = new PrintWriter(writer);

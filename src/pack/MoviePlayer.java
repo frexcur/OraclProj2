@@ -18,6 +18,11 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private Screen screen;
   private MonitorType monitorType;
 
+  /**
+   * @param name of the product
+   * @param screen is the screen resolution, refresh rate, and response time
+   * @param monitorType - whether its lcd or led
+   */
   public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
     this.monitorType = monitorType;

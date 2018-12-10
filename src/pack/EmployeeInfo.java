@@ -24,7 +24,6 @@ public class EmployeeInfo {
   private Pattern p;
   private Scanner in = new Scanner(System.in, "UTF-8");
 
-
   public EmployeeInfo() {
     setName();
     p = Pattern.compile("[A-Z][a-z]{3}[0-9]{2}");
@@ -56,7 +55,7 @@ public class EmployeeInfo {
   }
 
   /**
-   * @return name of Emplyee
+   * @return name of Employee
    */
   private String inputName() {
     String nameString;
@@ -74,6 +73,9 @@ public class EmployeeInfo {
     }
   }
 
+  /**
+   * @return deptID of employee
+   */
   public String getDeptId() {
     System.out.println("Please enter a Dept ID");
     deptId = in.nextLine();

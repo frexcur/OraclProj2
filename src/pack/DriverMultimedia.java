@@ -22,7 +22,5 @@ public class DriverMultimedia {
     MoviePlayer m1 = new MoviePlayer("hi", new Screen("1080", 60, 1), MonitorType.LCD);
 
     m1.play();
-
-
   }
 }
