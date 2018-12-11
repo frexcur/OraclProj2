@@ -3,6 +3,13 @@ A project that will be creating a template in Java, for Oracle, to create and re
 
 # Running the program
 
+You will be prompted to enter a number between 1 to 3. If any other number is entered the program will exit. If no one products are made you will want to enter 1 where you will be prompted to enter a name for the product. Then you will be asked to enter if you would like to make it a movie player or audio player. From there you will enter certain specifications for whichever option you chose.
+
+# Demo
+![]({Program Demo.gif)
+
+# Class Diagram
+
 # Resources
 
 These are some websites I used to help me to create this program. Along with these websites, my classmate Brandon helped with certain steps, especially near the end.
