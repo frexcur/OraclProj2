@@ -11,9 +11,6 @@ You will be prompted to enter a number between 1 to 3. If any other number is en
 # Class Diagram
 ![](OracleClassDiagram.PNG)
 
-# JavaDocs
-file:///C:/JavaDocs/index.html
-
 # Resources
 
 These are some websites I used to help me to create this program. Along with these websites, my classmate Brandon helped with certain steps, especially near the end.
