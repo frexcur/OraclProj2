@@ -49,7 +49,12 @@ public class Main {
             break;
           case 2:
             //display total products made
-            System.out.println("\nYou have created " + products.size() + " products so far!");
+            if (products.size() == 0 || products.size() > 1) {
+              System.out.println("\nYou have created " + products.size() + " products so far!");
+            }
+            else {
+              System.out.println("\nYou have created " + products.size() + " product so far!");
+            }
             break;
           case 3:
             //display types of products made
@@ -70,8 +75,9 @@ public class Main {
     name = scan.next();
     System.out.println(
         "Your product name will be: " + name + ".");
-    System.out.println("To make a movie player, enter 1");
-    System.out.println("To make a audio player, enter 2");
+    System.out.println("To make a movie player, enter 1.");
+    System.out.println("To make a audio player, enter 2.");
+    System.out.println("To go back to the main menu enter any other number.");
     choice = scan.nextInt();
     switch (choice) {
       case 1:
@@ -83,7 +89,7 @@ public class Main {
         CreateAudioPlayer(name);
         break;
       default:
-        System.out.println("Please enter 1 or 2");
+        System.out.println("Going back to main menu \n");
     }
   }
 
