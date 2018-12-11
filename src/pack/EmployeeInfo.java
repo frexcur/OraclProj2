@@ -59,7 +59,7 @@ public class EmployeeInfo {
    */
   private String inputName() {
     String nameString;
-    System.out.println("Please enter your first and last name");
+    System.out.print("Please enter your first and last name: ");
     nameString = in.nextLine();
     return nameString;
   }
